@@ -1,0 +1,153 @@
+/* ================================
+   CSS RESET
+================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F172A;
+  background-color: #ffffff;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* ================================
+   CSS VARIABLES
+================================ */
+
+:root {
+  /* Colors */
+  --color-dark:        #0F172A;
+  --color-white:       #FFFFFF;
+  --color-gray-light:  #F8F8F6;
+  --color-gray-border: #D3D1C7;
+  --color-gray-muted:  #888780;
+  --color-gray-bg:     #F1EFE8;
+  --color-green:       #639922;
+  --color-green-light: #C0DD97;
+  --color-green-pale:  #EAF3DE;
+  --color-green-dark:  #3B6D11;
+  --color-card-dark:   #1E293B;
+  --color-card-border: #2D3F55;
+
+  /* Typography */
+  --font-main: 'Noto Sans JP', sans-serif;
+
+  /* Spacing */
+  --section-padding-desktop: 96px;
+  --section-padding-mobile:  56px;
+  --container-max:           1100px;
+  --container-side-desktop:  40px;
+  --container-side-mobile:   20px;
+
+  /* Border radius */
+  --radius-card:   12px;
+  --radius-btn:    6px;
+  --radius-tag:    6px;
+
+  /* Transitions */
+  --transition: all 0.25s ease;
+}
+
+/* ================================
+   COMMON LAYOUT
+================================ */
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-side-desktop);
+}
+
+.section-padding {
+  padding: var(--section-padding-desktop) 0;
+}
+
+/* ================================
+   COMMON TYPOGRAPHY
+================================ */
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-green);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-gray-muted);
+  line-height: 1.7;
+  margin-bottom: 56px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 var(--container-side-mobile);
+  }
+
+  .section-padding {
+    padding: var(--section-padding-mobile) 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 36px;
+  }
+}

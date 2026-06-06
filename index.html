@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="加藤健一 — LP制作・レスポンシブデザイン・WordPress対応。個人事業主・店舗向けのWeb制作をHTML/CSS/JavaScriptで行います。" />
+  <meta name="author" content="Kenichi Kato" />
+
+  <!-- Title -->
+  <title>Kenichi Kato | LP制作・Web制作</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/works.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/why.css" />
+  <link rel="stylesheet" href="css/process.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar__container">
+
+            <!-- Logo / Brand -->
+            <a href="#" class="navbar__logo" aria-label="Kenichi Kato — トップへ戻る">
+                <span class="navbar__logo-text">Kenichi Kato</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="navbar__nav" aria-label="メインナビゲーション">
+                <ul class="navbar__nav-list">
+                    <li class="navbar__nav-item">
+                        <a href="#works" class="navbar__nav-link">制作実績</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="#services" class="navbar__nav-link">サービス</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="#process" class="navbar__nav-link">制作の流れ</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="#about" class="navbar__nav-link">プロフィール</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="#contact" class="navbar__nav-link navbar__nav-link--cta">相談する</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button 
+                class="navbar__hamburger"
+                aria-label="メニューを開く"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="navbar__mobile-menu" id="mobile-menu" aria-hidden="true">
+            <nav aria-label="モバイルナビゲーション">
+                <ul class="navbar__mobile-list">
+                    <li><a href="#works" class="navbar__mobile-link">制作実績</a></li>
+                    <li><a href="#services" class="navbar__mobile-link">サービス</a></li>
+                    <li><a href="#process" class="navbar__mobile-link">制作の流れ</a></li>
+                    <li><a href="#about" class="navbar__mobile-link">プロフィール</a></li>
+                    <li><a href="#contact" class="navbar__mobile-link navbar__mobile-link--cta">相談する</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!-- AOS.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
