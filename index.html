@@ -92,7 +92,7 @@
 
     </header>
 
-    <!-- hero start here-->
+    <!-- hero section-->
     <section class="hero" id="home">
         <div class="hero__container">
 
@@ -159,7 +159,285 @@
         </div>
     </section>
 
-    <!-- hero ends here -->
+    <!-- Featured Works Section -->
+
+    <section class="works" id="works">
+        <div class="works__container">
+
+            <!-- Section Header -->
+            <div class="works__header">
+                <span class="works__eyebrow">制作実績</span>
+                <h2 class="works__title">Selected Works</h2>
+                <p class="works__subtitle">
+                    LP・Web制作・JSアプリの実績を掲載しています
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="works__filters" role="tablist" aria-label="プロジェクトフィルター">
+                <button
+                    class="works__filter-btn works__filter-btn--active"
+                    data-filter="all"
+                    role="tab"
+                    aria-selected="true"
+                >
+                    すべて
+                </button>
+                <button
+                    class="works__filter-btn"
+                    data-filter="lp"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    LP制作
+                </button>
+                <button
+                    class="works__filter-btn"
+                    data-filter="js"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    JSアプリ
+                </button>
+                <button
+                    class="works__filter-btn"
+                    data-filter="react"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    Reactアプリ
+                </button>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="works__grid">
+
+                <!-- Card 1 — PetPass Japan (Featured) -->
+                <article
+                    class="works__card works__card--featured"
+                    data-category="lp"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                >
+                    <div class="works__card-image">
+                        <span class="works__card-badge">Featured</span>
+                        <img
+                            src="images/works/petpass-japan.png" 
+                            alt="PetPass Japan — ペットの国際移動サポートLP"
+                            class="works__card-img"
+                            width="600"
+                            height="340"
+                            loading="lazy"    
+                        />
+                    </div>
+                    <div class="works__card-body">
+                        <span class="works__card-tag works__card-tag--lp">LP制作</span>
+                        <h3 class="works__card-title">PetPass Japan</h3>
+                        <p class="works__card-description">
+                            ペットの国際移動・輸出入サポートサービスのランディングページ。スマホ対応・アニメーション実装済み。
+                        </p>
+                        <div class="works__card-skills">
+                            <span class="works__skill-pill">HTML</span>
+                            <span class="works__skill-pill">CSS</span>
+                            <span class="works__skill-pill">JavaScript</span>
+                        </div>
+                        <div class="works__card-links">
+                            <a
+                                href="https://kkato0219.github.io/petpass-japan/"
+                                class="works__card-link works__card-link--demo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="PetPass Japan のライブデモを見る"
+                            >
+                                Live Demo
+                                <span class="works__card-link-arrow" aria-hidden="true">→</span>
+                            </a>
+                            <a    
+                                href="https://github.com/kkato0219/PetPass-Japan"
+                                class="works__card-link works__card-link--github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="PetPass Japan のGitHubを見る"
+                            >
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 — May Beauty Clinic -->
+                <article
+                    class="works__card"
+                    data-category="lp"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <div class="works__card-image">
+                    <img
+                        src="images/works/may-beauty.png"
+                        alt="May Beauty Clinic — 美容クリニックLP"
+                        class="works__card-img"
+                        width="600"
+                        height="340"
+                        loading="lazy"
+                    />
+                    </div>
+                    <div class="works__card-body">
+                        <span class="works__card-tag works__card-tag--lp">LP制作</span>
+                        <h3 class="works__card-title">May Beauty Clinic</h3>
+                        <p class="works__card-description">
+                            美容クリニック向けランディングページ。洗練されたデザインとスムーズなアニメーションを実装。
+                        </p>
+                        <div class="works__card-skills">
+                            <span class="works__skill-pill">HTML</span>
+                            <span class="works__skill-pill">CSS</span>
+                            <span class="works__skill-pill">JavaScript</span>
+                        </div>
+                        <div class="works__card-links">
+                            <a
+                                href="https://kkato0219.github.io/may-beauty-clinic/"
+                                class="works__card-link works__card-link--demo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="May Beauty Clinic のライブデモを見る"
+                            >
+                                Live Demo
+                                <span class="works__card-link-arrow" aria-hidden="true">→</span>
+                            </a>
+                            <a
+                                href="https://github.com/kkato0219/may-beauty-clinic"
+                                class="works__card-link works__card-link--github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="May Beauty Clinic のGitHubを見る"
+                            >
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 — JS App -->
+                <article
+                    class="works__card"
+                    data-category="js"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    <div class="works__card-image">
+                    <img
+                        src="images/works/js-app.png"
+                        alt="JavaScriptアプリ — 制作実績"
+                        class="works__card-img"
+                        width="600"
+                        height="340"
+                        loading="lazy"
+                    />
+                    </div>
+                    <div class="works__card-body">
+                        <span class="works__card-tag works__card-tag--js">JSアプリ</span>
+                        <h3 class="works__card-title">JavaScript App</h3>
+                        <p class="works__card-description">
+                            バニラJavaScriptで制作したWebアプリケーション。DOM操作・イベント処理・API連携を実装。
+                        </p>
+                        <div class="works__card-skills">
+                            <span class="works__skill-pill">HTML</span>
+                            <span class="works__skill-pill">CSS</span>
+                            <span class="works__skill-pill">JavaScript</span>
+                        </div>
+                        <div class="works__card-links">
+                            <a
+                                href="#"
+                                class="works__card-link works__card-link--demo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="JSアプリのライブデモを見る"
+                            >
+                                Live Demo
+                                <span class="works__card-link-arrow" aria-hidden="true">→</span>
+                            </a>
+                            <a
+                                href="#"
+                                class="works__card-link works__card-link--github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="JSアプリのGitHubを見る"
+                            >
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 — React App -->
+                <article
+                    class="works__card"
+                    data-category="react"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
+                    <div class="works__card-image">
+                    <img
+                        src="images/works/react-app.png"
+                        alt="Reactアプリ — 制作実績"
+                        class="works__card-img"
+                        width="600"
+                        height="340"
+                        loading="lazy"
+                    />
+                    </div>
+                    <div class="works__card-body">
+                        <span class="works__card-tag works__card-tag--react">Reactアプリ</span>
+                        <h3 class="works__card-title">React App</h3>
+                        <p class="works__card-description">
+                            Reactで制作したシングルページアプリケーション。コンポーネント設計・Hooksを活用。
+                        </p>
+                        <div class="works__card-skills">
+                            <span class="works__skill-pill">React</span>
+                            <span class="works__skill-pill">JavaScript</span>
+                            <span class="works__skill-pill">CSS</span>
+                        </div>
+                        <div class="works__card-links">
+                            <a
+                                href="#"
+                                class="works__card-link works__card-link--demo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Reactアプリのライブデモを見る"
+                            >
+                                Live Demo
+                                <span class="works__card-link-arrow" aria-hidden="true">→</span>
+                            </a>
+                            <a
+                                href="#"
+                                class="works__card-link works__card-link--github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="ReactアプリのGitHubを見る"
+                            >
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <!-- End Grid -->
+
+            <!-- View All Button -->
+            <div class="works__footer">
+                <a
+                    href="https://github.com/kkato0219"
+                    class="works__all-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    すべての実績を見る
+                    <span class="works__all-btn-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
 
     <!-- AOS.js -->
