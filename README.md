@@ -85,7 +85,7 @@ portfolio-v2/
 
 | プロジェクト | カテゴリ | リンク |
 |------------|---------|--------|
-| PetPass Japan | LP制作 | https://kkato0219.github.io/PetPass-Japan/ |
+| PetPass Japan | LP制作 | https://kkato0219.github.io/petpass-japan/ |
 | May Beauty Clinic | LP制作 | https://kkato0219.github.io/may-beauty-clinic/ |
 | Weather Dashboard | JSアプリ | https://kkato0219.github.io/weather-dashboard-app/ |
 | Movie Explorer | Reactアプリ | https://sage-empanada-9fe8ef.netlify.app/ |
